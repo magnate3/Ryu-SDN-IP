@@ -69,10 +69,15 @@ Configuration file example:
 
 ```bash
 $ ./bin/sdnip-mgr --observe-links sdnip.arp_proxy sdnip.fwd_bgp sdnip.sdn_ip
+or
+export PYTHONPATH=`pwd`:$PYTHONPATH
+./bin/sdnip-mgr --sdn-ip-cfg-file ./config.json  --observe-links sdnip.arp_proxy sdnip.fwd_bgp sdnip.sdn_ip
 ```
-
+5、 create topo
+python quagga-test1.py
 Reference:
-
+https://github.com/sdnds-tw/Ryu-SDN-IP
+https://github.com/ruicao93/SDN-IP-Ryu
 [SDN-IP wiki](https://wiki.onosproject.org/display/ONOS/SDN-IP)
 
 TODO:
